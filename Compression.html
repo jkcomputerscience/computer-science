@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Compression</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: rockwell;
+  background-color: #f1f1f1;
+}
+
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 20%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: white;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1><span style="font-family: Rockwell">Compression</span></h1>
+</div>
+
+<div class="topnav">
+  <a href="index.html"><span style= "font-family: rockwell">Homepage</span></a>
+</div>
+
+<div class="header">
+  <img src="DATACOMPRESSIONDESCRIPTION.PNG" alt="" width="900" height="100">
+</div>
+
+<div class="row">
+  <div class="column">
+    <div class="card" style="background-color: white">
+      <h3><span style= "font-family: rockwell; color:lightslategray; text-align: centre">Why Data Files Are Compressed:</span></h3>
+      <ul style="color:black; text-align:left; font-family: Rockwell">
+        <li>Files will take up <b>less storage</b> space on a device.</li>
+        <li>Streaming and downloading files from the internet is <b>faster</b> because they take up <b>less bandwidth.</b></li>
+        <li>Web pages <b>load faster</b> in web browsers.</li>
+        <li>Many messaging services have <b>limits to</b> the <b>size</b> of a file being sent therefore, compressing a file will allow you to send the same file.</li>
+      </ul>
+    </div>
+  </div>
+
+
+  <div class="column">
+    <div class="card" style="background-color: white">
+      <h3><span style= "font-family: rockwell; color:lightslategray">Lossy Compression:</span></h3>
+      <p style="text-align: left; font-family: rockwell; color: #837E7C"><b>Description:</b></p>
+      <ul style="color:black; text-align:left; font-family: Rockwell">
+        <li>Lossy compression <b>Permanently removes data</b> from a file.</li>
+        <li>This permanent removal of data <b>limits</b> the <b>number of bits</b> the file needs reducing the size of the file.</li>
+      </ul>
+      <p style="text-align: left; color: #837E7C; font-family: rockwell"><b>Advantages:</b></p> 
+      <ul style="color:black; text-align: left; font-family: rockwell"> 
+        <li>Reduces the file size immensely so <b>more files</b> can be stored on that same device.</li>
+        <li>Lossy compressed files can be <b>downloaded more quickly</b> because they take up <b>less bandwidth.</b></li>
+      </ul>
+      <p style="text-align: left; color: #837E7C; font-family: rockwell"><b>Disadvantages:</b></p> 
+      <ul style="color:black; text-align: left; font-family: rockwell"> 
+        <li>Lossy compression <b>PERMANENTLY</b> loses data that can <b>never be restored.</b></li>
+        <li>Lossy compression only <b>does not work</b> on files that cannot lose data permanently like <b>text</b> or <b>software files.</b></li>
+        <li>Lossy files are <b>worse quality</b> to the original but tis quality change is usually <b>unoticeable.</b></li>
+      </ul>
+      <p style="text-align: left; color: #837E7C; font-family: rockwell"><b>Examples:</b></p> 
+      <ul style="color:black; text-align: left; font-family: rockwell"> 
+        <li style= "color: black;"><b>JPEG (Images)</b></li>
+        <li style= "color: black;"><b>MP3 (Audio)</b></li>
+      </ul>
+    </div>
+  </div>
+
+
+  <div class="column">
+    <div class="card" style="background-color: white">
+      <h3><span style= "font-family: rockwell; color:lightslategray">lossless Compression:</span></h3>
+      <p style="text-align: left; font-family: rockwell; color: #837E7C"><b>Description:</b></p>
+      <ul style="color:black; text-align:left; font-family: Rockwell">
+        <li>Lossless compression makes a file smaller by <b>temporarily</b> removing data.</li>
+        <li>This temporary removal of data occurs when the file is being stored but is then <b>restored</b> to the original file when it is opened.</li>
+      </ul>
+      <p style="text-align: left; color: #837E7C; font-family: rockwell"><b>Advantages:</b></p> 
+      <ul style="color:black; text-align: left; font-family: rockwell"> 
+        <li>Data is only temporarily removed so there will be <b>no quality loss</b> when the file is opened.</li>
+        <li>Lossless files can be <b>decompressed</b> unlike  lossy file.</li>
+        <li>Lossless compression can take place on <b>all types</b> of files including text and software files unlike lossy compression.</li>
+      </ul>
+      <p style="text-align: left; color: #837E7C; font-family: rockwell"><b>Disadvantages:</b></p> 
+      <ul style="color:black; text-align: left; font-family: rockwell"> 
+        <li>There is only a <b>slight reduction</b> in file size so files that were lossy compressed will take up less space than lossless compressed files.</li>
+      </ul>
+      <p style="text-align: left; color: #837E7C; font-family: rockwell"><b>Examples:</b></p> 
+      <ul style="color:black; text-align: left; font-family: rockwell"> 
+        <li><b>PNG (Image)</b></li>
+        <li><b>FLAC (Audio)</b></li>
+      </ul>
+    </div>
+  </div>
+
+
+
+  <div class="column">
+    <div class="card" style="background-color: white">
+      <h3><span style= "font-family: rockwell; color:lightslategray">Run Length Encoding:</span></h3>
+      <p style="text-align: left; font-family: rockwell; color: #837E7C"><b>Description:</b></p>
+      <ul style="color:black; text-align:left; font-family: Rockwell">
+        <li>RLE is a form of <b>lossless compression</b> so it reduces a file's size without losing any data or quality.</li>
+        <li>It works by carrying out <b>Runs</b>. A run is where it looks for <b>consecutive repeating data</b> in a file.</li>
+        <li>Instead of storing each piece of data seperately, it stores the <b>number of times</b> a piece of data is repeated.</li>
+      </ul>
+      <p style="text-align: left; color: #837E7C; font-family: rockwell"><b>For Example:</b></p>
+      <img src="RLE1.PNG" alt="Run length encoding Bitmap" width="100" height="50">
+      <ul style="color:black; text-align: left; font-family: rockwell"> 
+        <li>For example, if the image above uses an <b>8-bit colour depth</b>, the file size would be <b>480 bits</b>. This can be reduced by using RLE.</li>
+        <li>First of all, count the number of times the same data is repeated in each run and store this:</li>
+        <img src="RLE2.PNG" alt="Run length encoding RLE" width="100" height="100"> 
+        <li>Next, store this information is <b>pairs</b> in the format: <b>(Number of pixels, Colour)</b></li>
+        <li>In this example, there are <b>20 pairs</b> to store. Each pair contains a number that is stored as an <b>8-bit binary number</b> and an <b>8-bit colour</b> (8-bit colour depth) - so 8+8 = <b>16 bits</b> in total</li>
+        <li>The final compressed image would be <b>20 X 16 = 320 Bits</b></li>
+        <li>So,<b>140 bits</b> would be <b>saved</b> by compressing the image using RLE</li> 
+      </ul>
+      <p style="text-align: left; color: #837E7C; font-family: rockwell"><b>Disadvantages:</b></p> 
+      <ul style="color:black; text-align: left; font-family: rockwell"> 
+        <li>Sometimes however, RLE can <b>increase</b> the file size of an image, this can happen when the data does not have many repeated runs of data.</li>
+      </ul>
+    </div>
+  </div>
+
+
+
+<div class="column">
+    <div class="card" style="background-color: white">
+      <h3><span style= "font-family: rockwell; color:lightslategray">Huffman Coding:</span></h3>
+      <p style="text-align: left; font-family: rockwell; color: #837E7C"><b>Description:</b></p>
+      <ul style="color:black; text-align:left; font-family: Rockwell">
+        <li>Data in regular files take up the <b>same amount of space</b> which is often <b>inefficient.</b></li>
+        <li>Huffman coding stops this by giving each data value in a file a <b>unique binary code</b> but with varied lengths where values that appear <b>less frequently</b> will have <b>shorter binary codes.</b></li>
+      </ul>
+      <p style="text-align: left; color: #837E7C; font-family: rockwell"><b>For Example:</b></p>
+      <ul style="color:black; text-align: left; font-family: rockwell"> 
+        <li>If we wanted to encode <b>"He sells seashells".</b></li>
+        <li>We would start off by counting the number of times each character occurs starting with most to least frequent and put this information into a table:</li>
+        <img src="TABLEHUFFMAN.PNG" alt="Run length encoding RLE" width="100" height="100"> 
+        <li>Next, take the 2 <b>least frequent</b> characters and put them into an ordered list where the smaller frequency is <b>ALWAYS on the lEFT.</b> Add the frequencies and place the sum on top of them.</li>
+        <li>Repeat this process with the remaining characters. At the end, label the final huffman tree branches by labeling all <b>left branches "0"</b> and all the <b>right branches "1":</b></li>
+        <img src="TABLEHUFFMAN3.PNG" alt="Run length encoding RLE" width="150" height="150"> 
+        <li>So, "He sells seashells" would be encoded as:</li>
+        <li><b>1011001001100010
+          11110011001010111
+        01100010111 = 44 bits</b></li> 
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

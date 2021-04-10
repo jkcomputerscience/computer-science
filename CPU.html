@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CPU</title>
+<title>Computational Thinking</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color:#f1f1f1;
+}
+
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.3333%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1><span style="font-family: Rockwell">Computers and CPU's</span></h1>
+</div>
+
+<div class="topnav">
+  <a href="index.html"><span style= "font-family: rockwell">Homepage</span></a>
+</div>
+
+<div class="header">
+  <h1><span style="font-family: Rockwell; background-color: white"></span></h1>
+  <img src="COMPUTERS.PNG" alt="Computers Information" width="900" height="300">
+</div>
+
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+    <h2 style = "color: white; text-align: center; font-family: rockwell"> EMBEDDED SYSTEMS </h2>
+    <div class="row">
+        <div class="column">
+          <img src="CPU.jpg" alt="GPS" width="200" height="150">
+        </div>
+        <div class="column">
+          <img src="MICROWAVE.webp" alt="Microwave" width="150" height="150">
+        </div>
+        <div class="column">
+          <img src="MP3.PNG" alt="MP3" width="100" height="200">
+        </div>
+      </div>
+    <p style="font-family: rockwell; color: black"><b>Definition:</b></p>
+    <ul style="font-family: rockwell; color: white">
+      <li>Embedded systems are computers that are <b>built into</b> other devices.</li>
+      <li>They are systems <b>dedicated</b> to a specific job.</li>
+      <li>They are often used as <b>control systems.</b></li>
+    </ul>
+    <p style="font-family: rockwell; color: black"><b>Example Uses:</b></p>
+    <ul style="font-family: rockwell; color: white">
+      <li><b>Dishwashers.</b></li>
+      <li><b>Microwaves</b></li>
+    </ul>
+    <p style="font-family: rockwell; color: black"><b>Advantages:</b></p>
+    <ul style="font-family: rockwell; color: white">
+      <li>Dedicated to a <b>single task</b> so are <b>easier to design.</b></li>
+      <li><b>Cheaper</b> to produce as they consist of <b>less parts.</b></li>
+      <li><b>Efficient</b> because they only have <b>one job</b> to do.</li>
+    </ul>
+  </div>
+  
+  <div class="column" style="background-color:#bbb;">
+    <h2 style = "color: white; text-align: center; font-family: rockwell">THE CPU</h2>
+    <p style="font-family: rockwell; color: black"><b>Definition:</b></p>
+    <ul><span style="font-family: rockwell; color: white">
+      <li>The <b>Central processing unit.</b></li>
+      <li>The CPU is the "Brain" of a computer, it process all of the data and instructions that make the system work.</li>
+    </ul>
+    <p style="font-family: rockwell; color: black"><b>The parts of the CPU:</b></p>
+    <ul><span style="font-family: rockwell; color: white">
+      <p style="font-family: rockwell; color: black"><b>The Control Unit (CU):</b></p>
+      <li>The control unit ultimatley <b>controls</b> the entirety of the CPU as its main job is to <b>execute program instructions</b> by following the <a href="Fetch_Decode_Execute_Cycle.html">Fetch Decode Execute Cycle</a>.</li>
+      <li>It controls the <b>flow of data</b> inside the CPU and outside the CPU.</li>
+      <p style="font-family: rockwell; color: black"><b>The Arithmetic Logic Unit (ALU):</b></p>
+      <li>Ultimatley does all of the <b>calculations</b> and <b>comparisions.</b></li>
+      <li>It also completes <b>logic operations</b> and <b>binary shifts.</b></li>
+      <li>Registers store the results made by the ALU.</li>
+      <p style="font-family: rockwell; color: black"><b>The Cache:</b></p>
+      <li>Cache is very <b>fast memory</b> in CPU, however, slower than registers but faster than RAM.</li>
+      <li>Cache hs a very <b>low capacity</b> but is also very <b>expensive</b> compared to RAM and secondary storage.</li>
+      <li>Cache stores <b>regularly used data</b> for the CPU to access quickly because when it needs data, it checks Cache first then RAM.</li>
+      <p style="font-family: rockwell; color: black"><b>The Clock:</b></p>
+      <li>The clock sends out <b>signals</b> at a <b>constant rate</b> that cycle between 1 and 0.</li>
+      <li>The signal is used to <b>synchronise</b> the rate at which instructions are carried out.</li>
+      <li>The rate of the clock cycles is called the <b>clock speed.</b></li>
+      <p style="font-family: rockwell; color: white"><b>The Buses:</b></p>
+      <li>Buses are <b>collections of wires</b> used to <b>transmit data</b> between components of the CPU and other parts of a computer.</li>
+      <p style="font-family: rockwell; color: black"><b>The Registers:</b></p>
+      <li>Registers <b>temporarily</b> hold tiny bits of data needed by the CPU.</li>
+      <li>They are very <b>quick</b> at reading and writing, more than any other type of memory.</li>
+  </div>
+
+  <div class="column" style="background-color:#E5E4E2;">
+    <h2 style= "color: black; text-align: center; font-family: rockwell">CPU PERFORMANCE</h2>
+    <p span style="font-family: rockwell; color: black"><b>Clock Speed:</b></p>
+    <ul span style="font-family: rockwell; color: black">
+      <li>The CPU is regulated with clock signals so a <b>set number</b> of instructions are executed per clock cycle.</li>
+      <li>The <b>faster</b> these cycles are, the <b>more</b> instructions can be executed per second.</li>
+      <li><b>increasing Clock Spped = Increased Performance</b></li>
+    </ul>
+    <p span style="font-family: rockwell; color: black"><b>CPU Cores:</b></p>
+    <ul span style="font-family: rockwell; color: black">
+      <li>Multiple cores means <b>multiple instructions</b> can be executed <b>simultaneously.</b></li>
+      <li><b>Increasing Number of Cores = Increased Performance</b></li>
+    </ul>
+    <p span style="font-family: rockwell; color: black"><b>Cache Size:</b></p>
+    <ul span style="font-family: rockwell; color: black">
+      <li>Cache stores <b>regularly used</b> data that may be used by the CPU so it can be <b>accessed quickly.</b></li>
+      <li>So the larger the cache size, the <b>more instructions</b> can be accessed faster so the <b>fetch stage is quicker.</b></li>
+      <li><b>Increasing Cache size = Increased Performance</b></li>
+    </ul>
+  </div>
+
+
+</div>
+
+</body>
+</html>

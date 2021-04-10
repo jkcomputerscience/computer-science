@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Homepage</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: gray;
+  padding: 20px;
+  font-family: Rockwell;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+  font-family: rockwell;
+  color: white;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+.container .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container .btn:hover {
+  background-color: black;
+}
+
+</style>
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1>IGCSE COMPUTER SCIENCE</h1>
+<hr>
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('Algorithms')"> Algorithms</button>
+  <button class="btn" onclick="filterSelection('Programming Theory')"> Programming Theory</button>
+  <button class="btn" onclick="filterSelection('Testing and Translating')"> Testing and Translating</button>
+  <button class="btn" onclick="filterSelection('Data Representation')">Data Representation</button>
+  <button class="btn" onclick="filterSelection('Computer Components')">Computer Components</button>
+  <button class="btn" onclick="filterSelection('Networks')">Networks</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column Algorithms">
+    <div class="content">
+      <a href="Computational_Thinking.html">
+      <img src="ALGOTHINKING.jpg" alt="Computational Thinking" style="width:100%">
+      </a>
+      <h4>Computational Thinking</h4>
+    </div>
+  </div>
+  <div class="column Algorithms">
+    <div class="content">
+    <a href= "Flowcharts.html">
+    <img src="COMMANDS.PNG" alt="Flowcharts" style="width:100%">
+    </a>
+      <h4>Flowcharts</h4>
+    </div>
+  </div>
+  <div class="column Algorithms">
+    <div class="content">
+    <a href= "Search_Algorithms.html">
+    <img src="SEARCHALGO.jpg" alt="Search Algorithms" style="width:100%">
+    <a/>
+      <h4>Search Algorithms</h4>
+    </div>
+  </div>
+  <div class="column Algorithms">
+    <div class="content">
+    <a href= "Sort_Algorithms.html">
+    <img src="MERGEVSBUBBLE.PNG" alt="Sort Algorithms" style="width:100%">
+    </a>
+      <h4>Sort Algorithms</h4>
+    </div>
+  </div>
+  
+  <div class="column Programming Theory">
+    <div class="content">
+    <a href= "SQL.html">
+    <img src="SQLTABLE.PNG" alt="SQL" style="width:100%">
+    </a>
+      <h4>Data Bases</h4>
+    </div>
+  </div>
+
+  <div class="column Data Representation">
+    <div class="content">
+    <a href= "Computer_Languages.html">
+    <img src="LANGUAGES.jpg" alt="Computer Languages" style="width:100%">
+    </a>
+      <h4>Computer Languages</h4>
+    </div>
+  </div>
+
+  <div class="column Testing and Translating">
+    <div class="content">
+    <a href= "Translators.html">
+    <img src="TRANSLATORS.png" alt="Translators" style="width:100%">
+    </a>
+      <h4>Translators</h4>
+    </div>
+  </div>
+
+  <div class="column Testing and Translating">
+    <div class="content">
+    <a href= "Logic.html">
+    <img src="NOTGATE.PNG" alt="Logic" style="width:100%">
+    </a>
+      <h4>Logic</h4>
+    </div>
+  </div>
+  
+  <div class="column Data Representation">
+    <div class="content">
+    <a href= "Character_Sets.html">
+    <img src="ASCIITABLE.PNG" alt="Character Sets" style="width:100%">
+    </a>
+      <h4>Character Sets</h4>
+    </div>
+  </div>
+  <div class="column Data Representation">
+    <div class="content">
+    <a href="Storing_Images.html">
+    <img src="24COLOURDEPTH.png" alt="Storing Images" style="width:100%">
+    </a>
+      <h4>Storing Images</h4>
+    </div>
+  </div>
+  <div class="column Data Representation">
+    <div class="content">
+    <a href= "Storing_Sound.html">
+    <img src="ANALOGUEGRAPH.PNG" alt="Storing Sound" style="width:100%">
+    </a>
+      <h4>Storing Sound</h4>
+    </div>
+  </div>
+  <div class="column Data Representation">
+    <div class="content">
+    <a href= "Compression.html">
+    <img src="COMPRESSION.png" alt="Compression" style="width:100%">
+    </a>
+      <h4>Compression</h4>
+    </div>
+  </div>
+  <div class="column Computer Components">
+    <div class="content">
+    <a href= "CPU.html">
+    <img src="CPU.jpg" alt="The CPU and Performance" style="width:100%">
+    </a>
+      <h4>The CPU and it's Performance</h4>
+    </div>
+  </div>
+  <div class="column Computer Components">
+    <div class="content">
+    <a href= "Von_Neumann_Architecture.html">
+    <img src="VONNEUMANNDIAGRAM.PNG" alt="Von Neumann Architecture" style="width:100%">
+    </a>
+      <h4>Von Neumann Architecture</h4>
+    </div>
+  </div>
+  <div class="column Computer Components">
+    <div class="content">
+    <a href= "Fetch_Decode_Execute_Cycle.html">
+    <img src="FETCHDECODEEXECUTE.PNG" alt="Fetch Decode Execute Cycle" style="width:100%">
+    </a>
+      <h4>Fetch Decode Execute Cycle</h4>
+    </div>
+  </div>
+  <div class="column Computer Components">
+    <div class="content">
+    <a href= "Memory.html">
+    <img src="MEMORY.jpg" alt="Memory" style="width:100%">
+    </a>
+      <h4>Memory</h4>
+    </div>
+  </div>
+  <div class="column Computer Components">
+    <div class="content">
+    <a href= "Storage.html">
+    <img src="STORAGE.jpg" alt="Storage" style="width:100%">
+    </a>
+      <h4>Storage</h4>
+    </div>
+  </div>
+  <div class="column Networks">
+    <div class="content">
+    <a href= "Networks.html">
+    <img src="NETWORKS.jpg" alt="General Networks" style="width:100%">
+    </a>
+      <h4>General Networks</h4>
+    </div>
+  </div>
+  <div class="column Data Networks">
+    <div class="content">
+    <a href= "Topologies.html">
+    <img src="TOPOLGIES.jpg" alt="Network Topolgies" style="width:100%">
+    </a>
+      <h4>Network Topolgies</h4>
+    </div>
+  </div>
+  <div class="column Data Networks">
+    <div class="content">
+    <a href= "Protocols.html">
+    <img src="PROTOCOLS.jpg" alt="Network Protocols" style="width:100%">
+    </a>
+      <h4>Network Protocols</h4>
+    </div>
+  </div>
+  <div class="column Data Networks">
+    <div class="content">
+    <a href= "Security.html">
+    <img src="SECURITY.jpeg" alt="Cyber Security" style="width:100%">
+    </a>
+      <h4>Cyber Security</h4>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</body>
+</html>

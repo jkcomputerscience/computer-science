@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Protocols</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: rockwell;
+  background-color:  #f1f1f1;
+}
+
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color:  #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 20%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: white;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1><span style="font-family: Rockwell">Network Protocols</span></h1>
+</div>
+
+<div class="topnav">
+  <a href="index.html"><span style= "font-family: rockwell">Homepage</span></a>
+  <a href="https://www.youtube.com/playlist?list=PLysiHWJ-gmZdNH7Bau4QyYT4qncCilCwJ"><span style= "font-family: rockwell">Helpful Videos</span></a>
+</div>
+
+<div class="header">
+  <h1><span style="font-family: Rockwell; background-color: white"></span></h1>
+  <img src="PROTOCOLSINFO.PNG" alt="Protocols Information" width="700" height="700">
+</div>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <h3><span style= "font-family: rockwell; color:lightslategray">The Layers:</span></h3>
+      <p style="text-align: left; font-family: rockwell; color: red"><span style="color: black"><b>Application Layer:</b></span> Provides <b>net working services to applications.</b></p>
+      <p style="text-align: left; font-family: rockwell; color: black"><b>Transport Layer:</b></p>
+      <ul style="color:red; text-align: left; font-family: rockwell"> 
+        <li>Sets up <b>communications between 2 devices.</b></li>
+        <li><b>Splits data into packets.</b></li>
+        <li>Checks packets are <b>correctly sent and delivered.</b></li>
+      </ul>
+      <p style="text-align: left; font-family: rockwell; color: black"><b>Network Layer:</b></p>
+      <ul style="color:red; text-align: left; font-family: rockwell">
+        <li><b>Adds IP addresses</b> to data packets.</li>
+        <li><b>Directs data packets</b> between devices.</li>
+        <li><b>Handles traffic</b> between data packets.</li>
+      </ul>
+      <p style="text-align: left; font-family: rockwell; color: black"><b>Link Layer:</b></p>
+      <ul style="color:red; text-align: left; font-family: rockwell">
+        <li><b>Passes the data</b> over the network.</li>
+        <li>Responsible for <b>how data is sent</b> as electrical signals over cables, wireless etc.</li>
+    </div> 
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h3><span style= "font-family: rockwell; color:lightslategray">Application Layer</span></h3>
+      <p style="text-align: left; font-family: rockwell; color: black"><b>HTTP:</b></p>
+      <ul style="color:black; text-align: left; font-family: rockwell"> 
+        <li><b>Hyper Text Transfer Protocol.</b></li> 
+        <li>Used by web browsers to <b>access websites</b> and <b>communicate with web servers.</b></li>    
+      </ul>
+      <p style="text-align: left; font-family: rockwell; color: black"><b>HTTPS:</b></p>
+      <ul style="color:black; text-align: left; font-family: rockwell"> 
+        <li><b>Hyper Text Transfer Protocol Secure.</b></li>
+        <li>A more <b>secure version</b> of HTTP.</li>
+        <li><b>Encrypts</b> all of the information sent and recieved.</li>
+      </ul>
+      <p style="text-align: left; font-family: rockwell; color: black"><b>FTP:</b></p>
+      <ul style="color:black; text-align: left; font-family: rockwell"> 
+        <li><b>File Transfer Protocol.</b></li>
+        <li><b>Accesses, edits and moves files</b> between devices on a network.</li>
+      </ul>
+      <p style="text-align: left; font-family: rockwell; color: black"><b>IMAP:</b></p>
+      <ul style="color:black; text-align: left; font-family: rockwell"> 
+        <li><b>Internet Message Access Protocol.</b></li>
+        <li><b>Retrieves emails</b> from a server.</li>
+      </ul>
+      <p style="text-align: left; font-family: rockwell; color: black"><b>SMTP:</b></p>
+      <ul style="color:black; text-align: left; font-family: rockwell"> 
+        <li><b>Simple Mail Transfer Protocol.</b></li>
+        <li><b>Sends emails</b> between servers.</li>
+      </ul>
+      </ul>
+    </div>
+  </div>
+
+
+  <div class="column">
+    <div class="card">
+      <h3><span style= "font-family: rockwell; color:lightslategray">Transport Layer</span></h3>
+      <p style="text-align: left; font-family: rockwell; color: blue"><b>There are two main protocols in the transport layer:</b></p>
+      <ol style="color: black; text-align:left; font-family: Rockwell">
+        <li><b>TCP</b></li>
+        <li><b>UDP</b></li>
+      </ol>
+      <p style="text-align: left; color: blue; font-family: rockwell"><b>TCP:</b></p> 
+      <ul style="color:black; text-align: left; font-family: rockwell"> 
+        <li><b>Transmission Control Protocol.</b></li>
+        <li>Establishes a <b>connection</b> between the sending and recieveing devices.</li>
+        <li>Splits the data into <b>NUMBERED packets</b> that can be reassembled once at its location.</li>
+        <li>The sending device gets a <b>CONFIRMATION</b> when the transfer is complete.</li>
+      </ul>
+      <p style="text-align: left; color: blue; font-family: rockwell"><b>UDP:</b></p> 
+      <ul style="color:black; text-align: left; font-family: rockwell"> 
+        <li><b>User Datagram Protocol.</b></li>
+        <li>Splits the data into <b>UNNUMBERED packets.</b></li>
+        <li>It only sends the packets once <b>without checking</b> if they were sent correctly or at all.</li>
+      </ul>
+      <p style="text-align: left; color: blue; font-family: rockwell"><b>When each of them would be used:</b></p>
+      <ul style="color:black; text-align: left; font-family: rockwell"> 
+        <li><b>UDP:</b> Applications that need <b>fast and efficient transmission</b> like <b>videostreaming.</b></li>
+        <li><b>TCP:</b> Applications that need <b>reliable transmission</b> is needed like when <b>downloading text files.</b></li>
+      </ul>
+    </div>
+  </div>
+
+
+  <div class="column">
+    <div class="card">
+      <h3><span style= "font-family: rockwell; color:lightslategray">Network Layer</span></h3>
+      <p style="text-align: left; color: gray; font-family: rockwell"><b>IP (Internet Protocol) is the most common protocol in the network layer.</b></p>
+      <p style="text-align: left; color: gray; font-family: rockwell"><b>IP's are responsible for allocating unique addresses to every device on the internet.</b></p>
+      <p style="text-align: left; color: gray; font-family: rockwell"><b>IP gets data from one device to another one.</b></p>
+      <p style="text-align: left; color: lightslategray; font-family: rockwell"><b>There are 2 types of IP's:</b></p>
+      <ul style="color: black; text-align:left; font-family: Rockwell">
+        <li><b>IPv4</b></li>
+        <li><b>IPv6</b></li>
+      </ul>
+      <p style="text-align: left; color: lightslategray; font-family: rockwell"><b>IPv4 VS IPv6:</b></p> 
+      <ul style="color:black; text-align: left; font-family: rockwell"> 
+        <li>IPv4 uses a <b>32-bit address</b> which allows approximatley <b>4 billion devices.</b></li>
+        <li>IPv6 uses a <b>128-bit address</b> allows exactly: 340,282,366,920,938,463,
+          463,374,607,431,
+          768,211,456 devices at once.</li>
+      </ul>
+
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h3><span style= "font-family: rockwell; color:lightslategray">Link Layer</span></h3>
+      <p style="text-align: left; font-family: rockwell; color: lightslategray"><b>The most common link layer protocols are:</b></p>
+      <ul style="color: black; text-align:left; font-family: Rockwell">
+        <li><b>WiFi</b></li>
+        <li><b>Ethernet</b></li>
+      </ul>
+      <p style="text-align: left; color: lightslategray; font-family: rockwell"><b>Difference:</b></p> 
+      <ul style="color:black; text-align: left; font-family: rockwell"> 
+        <li>WiFi is a family of protocols that get network packets from <b>one device to another</b> via <b>radio waves.</b></li>
+        <li>Ethernet is a family of protocols that get network packets from <b>one device to another</b> via a <b>cable.</b></li>
+      </ul>
+
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

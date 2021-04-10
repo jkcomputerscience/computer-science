@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Memory</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: rockwell;
+  background-color:#f1f1f1;
+}
+
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 50%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color:white;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1><span style="font-family: Rockwell">Memory</span></h1>
+</div>
+
+<div class="topnav">
+  <a href="index.html"><span style= "font-family: rockwell">Homepage</span></a>
+</div>
+
+<div class="header">
+  <h1><span style="font-family: Rockwell; background-color: white"></span></h1>
+  <img src="RAMINFO.PNG" alt="Information" width="900" height="400">
+</div>
+
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <h3><span style= "font-family: rockwell; color:lightslategray">RAM</span></h3>
+      <p style="text-align: left; font-family: rockwell; color: black"><b>Description:</b></p>
+      <ul style="color: black; text-align:left; font-family: Rockwell">
+        <li><b>Random Access Memory.</b></li>
+        <li>The <b>main memory</b> in a computer.</li>
+        <li><b>Volatile.</b></li>
+        <li>When software applications, files and documents are opened they are copied <b>from</b> <a href="Storage.html">Secondary Storage</a> <b>to RAM</b> until they are closed.</li>
+        <li>RAM is <b>slower than cache</b> but is far <b>faster than secondary storage.</b></li>
+      </ul>
+    </div> 
+  </div>
+
+
+  <div class="column">
+    <div class="card">
+      <h3><span style= "font-family: rockwell; color:lightslategray">ROM</span></h3>
+      <p style="text-align: left; font-family: rockwell; color: black"><b>Description:</b></p>
+      <ul style="color: black; text-align:left; font-family: Rockwell">
+        <li><b>Read Only Memory </b>- So ROM can only be read not written to.</li>
+        <li><b>Non-Volatile.</b></li>
+        <li>ROM comes as a <b>chip</b> that is built on the motherboard of a computer.</li>
+        <li>ROM chips contain <b>all the instructions</b> needed for the computer to <b>boot up.</b></li>
+        <li>Right when the computer is powered on the CPU reads the instructions to self check and set up the computer from ROM.</li>
+      </ul>
+    </div>
+  </div>
+  
+  
+</div>
+
+</body>
+</html>

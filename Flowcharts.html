@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Flowcharts</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+</head>
+<body>
+
+<div class="header" style="background-color: #f1f1f1">
+  <h1><span style="font-family: Rockwell">Flowcharts</span></h1>
+</div>
+
+<div class="topnav">
+  <a href="index.html"><span style= "font-family: rockwell">Homepage</span></a>
+</div>
+
+<div class="header">
+  <h1><span style="font-family: Rockwell; background-color: white"></span></h1>
+  <img src="COMMANDS.PNG" alt="Start/Stop" width="900" height="300">
+</div>
+
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+    <h2><span style = "color: white; text-align: center; font-family: rockwell"> SEQUENCES </span> </h2>
+    <img src="SEQUENCES.PNG" alt="Decomposition" width="200" height="300">
+    <p><span style="font-family: rockwell; color: black">Sequencing is the <b>order of execution</b> of operations in an algorithim.</span></p>
+  </div>
+  
+  <div class="column" style="background-color:#bbb;">
+    <h2><span style = "color: white; text-align: center; font-family: rockwell"> SELECTIONS </span></h2>
+    <img src="SELECTIONS.PNG" alt="Abstraction" width="200" height="300">
+    <p><span style="font-family: rockwell; color: black">Selection is process of making the <b>decision</b> to execute on operation over another.</span></p>
+  </div>
+  
+  <div class="column" style="background-color:#ccc;">
+    <h2> <span style= "color: white; text-align: center; font-family: rockwell"> ITERATIONS </span></h2>
+    <img src="LOOPS.PNG" alt="Algorithmic Thinking" width="200" height="300">
+    <p><span style="font-family: rockwell; color: black"> Iteration is process of <b>repeating</b> the same operation until it is true. </span></p>
+  </div>
+</div>
+
+</body>
+</html>

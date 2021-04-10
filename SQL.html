@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SQL</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: rockwell;
+  background-color: #f1f1f1;
+}
+
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: white;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+.newspaper {
+  column-count: 2;
+  column-gap: 20px;
+  column-rule: 1px solid indianred;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1><span style="font-family: Rockwell">Databases</span></h1>
+</div>
+
+<div class="topnav">
+  <a href="index.html"><span style= "font-family: rockwell">Homepage</span></a>
+  <a href="https://www.youtube.com/playlist?list=PLysiHWJ-gmZclmCOOlTq7VVB-UcNqwuv9"><span style= "font-family: rockwell">Helpful Videos</span></a>
+</div>
+
+
+<h2></h2>
+<p></p>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <h3 style="font-family: Rockwell; color: indianred">What is a Database?</h3>
+      <ul style="font-family: Rockwell; text-align: left">
+        <li>A database is an organsied<b>collection</b> of information that is stored and accessed electronically.</li>
+        <li> Examples of databases include <b>school databases</b> that may have information about students like their addresses, emergency contacts etc.</li>
+      <img src= "DATABASE.jpg" alt="Databases" width="200" height="150"
+      <h3><span style="font-family: Rockwell; color: indianred"><b>CRUD:</b></span></h3>
+       <ul style="font-family: Rockwell; text-align: left">
+         <li><span style="color: cadetblue; font-family: rockwell;"><b> C: </b></span> Create New Data items.</li>
+         <li><span style="color: cadetblue; font-family: rockwell;"><b> R: </b></span> Read Existing Data Items.</li>
+         <li><span style="color: cadetblue; font-family: rockwell;"><b> U: </b></span> Update Existing Data Items.</li>
+         <li><span style="color: cadetblue; font-family: rockwell;"><b> D: </b></span> Delete Data Items That Are No Longer Relevant.</li>
+      </ul>
+      <h3><span style="font-family: Rockwell; color: indianred"><b>Examples:</b></span></h3>
+      <div class="row">
+        <div class="column">
+          <img src="MICROSQL.PNG" alt="Microsoft SQL" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="MYSQL.PNG" alt="My SQL" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="ORACLE.PNG" alt="Oracle" style="width:100%">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h3 style="font-family: Rockwell; color: indianred">How Are Data Bases Organised?</h3>
+      <ol style="font-family: rockwell; text-align: left">
+        <li><span style="color: cadetblue"><b>Entities:</b></span> These are the things that the database is made to <b>discuss</b> like Teachers, Pupils, Employees etc.</li>
+        <li><span style="color: cadetblue; "><b>Records:</b></span> These are the <b>rows</b> of a table that describe a single entity.</li>
+        <li><span style="color: cadetblue; "><b>Fields:</b></span> These are the <b>columns</b> of a table that describe a specific aspect of all of the entities.</li>
+        <li><span style="color: cadetblue; "><b>Facts:</b></span> These are each of the <b>record-field pair.</b></li>
+      </ol>
+      <img src="SQLTABLE.PNG" alt="SQL Table" width="400" height="150">
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <h3 style="font-family: Rockwell; color: indianred">Datbases VS Spreadsheets:</h3>
+    <div class="newspaper"><h3 span style=" color: cadetblue">Databases</h3>
+    <ul style="font-family: rockwell; ">
+      <li> Have Tables, Records, and Fields.</li>
+      <li> Designed to store data in <b>more than 1 table</b>.</li>
+      <li> Tables, records, fields are <b>fixed</b> so they only store one type of data.</li>
+      <li> Databases are usually <b>relational.</b></li>
+      <li style="color: white"></li>
+    </ul>
+
+    <h3 span style=" color: cadetblue"> Spreadsheets </h3> 
+    <ul style="font-family: rockwell; "> 
+      <li> Have Sheets, Rows, Columns</li>
+      <li> Designed to store data in <b>one sheet.</b></li>
+      <li> Rows and columns can store <b>any kind fo data.</b></li>
+      <li> Spreadsheets are <b>non-relational.</b></li>
+    </ul>
+    </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <h3 style="font-family: Rockwell; color: indianred">Relational VS Non-Relational</h3>
+      <p style="text-align: left; color: cadetblue; font-family: rockwell"><b> Relational: </b><p>
+      <ul style="font-family: rockwell;">
+        <li style="text-align: left"> To store data in <b>seperate</b> tables.</li>
+      </ul>
+      <p style="text-align: left; color: cadetblue; font-family: rockwell"><b> Non-Relational: </b><p>
+      <ul style="font-family: rockwell;">
+        <li style="text-align: left"> To store data in a <b> table.</b></li>
+      </ul>
+    </div>
+  </div>
+
+
+  
+
+  <div class="column">
+    <div class="card">
+      <h3 style="font-family: Rockwell; color: indianred">SQL Commands</h3>
+      <p style="text-align: left; color: cadetblue; font-family: rockwell"><b>INSERT:</b></p>
+      <p style="text-align: left; font-family: rockwell"> - The most common way to <b>enter</b> information to a table is using the insert command.</p>
+      <p style="text-align: left; font-family: rockwell"> - The usual layout of an insert command would be: 
+      <p style="text-align: left; font-family: rockwell"> <b>INSERT INTO</b> (Table Name)(Fields that the new information will be added to) <b>VALUES</b> (The values to be added) </p>
+
+      <p style="text-align: left; color: cadetblue; font-family: rockwell"><b>SELECT:</b></p>
+      <p style="text-align: left; font-family: rockwell"> - The select command is a very <b>versatile</b> command and can be used in many ways.</p>
+      <p style="text-align: left; font-family: rockwell"> - The select command can be used to <b>gather</b> an entire table or a specific field from a table.</p>
+      <p style="text-align: left; font-family: rockwell"> - If we want to select a whole table, we would write:</p>
+      <p style="text-align: left; font-family: rockwell"> <b> SELECT * FROM </b> (Table Name)</p>
+      <p style="text-align: left; font-family: rockwell"> - Or, if we want to select a specific field - This is called slicing:</p>
+      <p style="text-align: left; font-family: rockwell"> <b>SELECT</b> (Field Name) <b>FROM</b> (Table Name)</p>
+
+      <p style="text-align: left; color: cadetblue; font-family: rockwell"><b>UPDATE:</b></p>
+      <p style="text-align: left; font-family: rockwell"> - The update command is used to <b>change</b>  the value of a fact based on a specified field that will identify the record of a specific entity.</p>
+      <p style="text-align: left; font-family: rockwell"> The usual layout of an update command would be:</p>
+      <p style="text-align: left; font-family: rockwell"> <b>UPDATE</b> (Table Name) <b>SET</b> (Field that contains the fact to be updated) <b>WHERE</b> (Field that contains unique value)(Unique value to the entity to be changed)</p>
+
+
+      <p style="text-align: left; color: cadetblue; font-family: rockwell"><b>DELETE:</b></p>
+      <p style="text-align: left; font-family: rockwell"> - Deleting is commonly used to <b>delete records</b> from a table in a database. For example, when a student leaves a school.</p>
+      <p style="text-align: left; font-family: rockwell"> - The usual layout of a delete command would be:</p>
+      <p style="text-align: left; font-family: rockwell"> <b>DELETE FROM</b> (Table Name) <b>WHERE</b> (Field Name) = (Unique Value of the record to be deleted)</p>
+
+      <p style="text-align: left; color: cadetblue; font-family: rockwell"><b>SORTING:</b></p>
+      <p style="text-align: left; font-family: rockwell">  - Sorting is done to <b>order</b> a specified field in a specific order.</p>
+      <p style="text-align: left; font-family: rockwell"> - The key command in sorting is the <b>ORDER BY</b> command which specifies the order of the records in the field. The order is automatically ascending but if you want the order to be descending you must write it: <b>[DESC].</b></p>
+      <p style="text-align: left; font-family: rockwell"> - The usual layout of a sorting command would be: </p>
+      <p style="text-align: left; font-family: rockwell"> <b>SELECT</b> (The Fields Wanted) <b>FROM</b> (Table Name) <b>ORDER BY</b> (Field name (Optionally: [DESC])) </p>
+      <p style="text-align: left; font-family: rockwell"> For Example: </p>
+      <img src="SORT.PNG" alt="Sorting">
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <h3 style="font-family: Rockwell; color: indianred">Primary and Foreign Keys</h3>
+      <p style="text-align: left; font-family: rockwell"><span style= "color: cadetblue"><b> Primary Key:</b></span></p>
+      <ul style="font-family: rockwell; text-align: left">
+       <li> A primary Key is a field that is used to <b>uniquley identify</b> a record. Like an <b>ID number</b> for example.</li>
+       <li> A primary Key can be either an <b>existing</b> field or a <b>generted</b> ID field</li>
+      </ul>
+      <p style="text-align: left; font-family: rockwell"><span style= "color: cadetblue"><b> Foreign Key:</b></span></p>
+      <ul style="font-family: rockwell; text-align: left">
+       <li> A foreign key is a field that is present in <b>2 or more tables</b> in order to <b>link</b> them.</li>
+       <li> This common field is always the <b>primary key.</b></li>
+      </ul>
+    
+
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

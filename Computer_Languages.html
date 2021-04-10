@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Computer Languages</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: rockwell;
+  background-color: #f1f1f1;
+}
+
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 33.3333%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: white;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1><span style="font-family: Rockwell">Computer Languages</span></h1>
+</div>
+
+<div class="topnav">
+  <a href="index.html"><span style= "font-family: rockwell">Homepage</span></a>
+</div>
+
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <h3><span style= "font-family: rockwell; color:lightslategray">High Level Languages</span></h3>
+      <p style="text-align: left; font-family: rockwell; color: lightslategray"><b>Description:</b></p>
+      <ul style="color: black; text-align:left; font-family: Rockwell">
+        <li>High level lnaguages are the programming languages that programmers are <b>farmiliar</b> with. For exmple: <b>Python</b> and <b>C++.</b></li>
+        <li>The code written in high level languages are <b>easy</b> for humans to <b>write</b> and <b>understand</b> but need to be <b>translated into machine code</b> for a computer to understand and run it.</li>
+      </ul>
+      <p style="text-align: left; color: lightslategray; font-family: rockwell"><b>Advantages:</b></p> 
+      <ul style="color:black; text-align: left; font-family: rockwell"> 
+        <li><b>One</b> instruction in a high level language represents <b>many</b> instructions in machine code.</li>
+        <li>The same code works on <b>many different</b> machines and processors.</li>
+        <li>Code is easy to <b>read, understand</b>, and therefore, <b>modify.</b></li>
+      </ul>
+      <p style="text-align: left; color: lightslategray; font-family: rockwell"><b>Disadvantages:</b></p> 
+      <ul style="color:black; text-align: left; font-family: rockwell"> 
+        <li>Must be <b>translated</b> into machine code in order for a computer to understand it and execute instructions.</li>
+        <li>There is <b>minimal control</b> over what the CPU actually does so programs will be <b>less efficient</b> and therefore, <b>slower.</b></li>
+      </ul>
+
+    </div> 
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h3><span style= "font-family: rockwell; color:lightslategray">Assembly Language</span></h3>
+      <p style="text-align: left; font-family: rockwell; color: lightslategray"><b>Description:</b></p>
+      <ul style="color: black; text-align:left; font-family: Rockwell">
+        <li>Assembly language is an example of a <b>middle level language.</b></li>
+        <li>Assembly language uses <b>mneumonics</b> which are <b>predefined words</b> to represnt the instructions needed to be executed.</li>
+      </ul>
+      <p style="text-align: left; color: lightslategray; font-family: rockwell"><b>Advantages:</b></p> 
+      <ul style="color:black; text-align: left; font-family: rockwell"> 
+        <li>Instructions are <b>shorter</b> so more memory and storage space <b>saved.</b></li>
+        <li><b>Execution time</b> is <b>less</b> because it is <b>faster</b> in speed.</li>
+      </ul>
+      <p style="text-align: left; color: lightslategray; font-family: rockwell"><b>Disadvantages:</b></p> 
+      <ul style="color:black; text-align: left; font-family: rockwell"> 
+        <li>One instruction in assembly code usually only represents one instruction in machine code.</li>
+        <li>Usually written for <b>one type</b> of machine or processor and will not work for any others.</li>
+        <li>Code is quite <b>difficult</b> to <b>read, understand</b> and <b>modify.</b></li>
+      </ul>
+    </div>
+  </div>
+
+
+  <div class="column">
+    <div class="card">
+      <h3><span style= "font-family: rockwell; color:lightslategray">Machine Code</span></h3>
+      <p style="text-align: left; font-family: rockwell; color: lightslategray"><b>Description:</b></p>
+      <ul style="color: black; text-align:left; font-family: Rockwell">
+        <li>Machine code is also known as <b>low level language.</b></li>
+        <li>The code consists of only <b>0's and 1's.</b></li>
+        <li>Computers can <b>directly interpret</b> this type of language and execute its instructions.</li>
+      </ul>
+      <p style="text-align: left; color: lightslategray; font-family: rockwell"><b>Advantages:</b></p> 
+      <ul style="color:black; text-align: left; font-family: rockwell"> 
+        <li>Commands in machine code can be <b>directly executed</b> without a translator.</li>
+        <li>You control exactly what the CPU does and how it uses memory so programs will be <b>more efficient</b> therefore, <b>faster.</b></li>
+      </ul>
+      <p style="text-align: left; color: lightslategray; font-family: rockwell"><b>Disadvantages:</b></p> 
+      <ul style="color:black; text-align: left; font-family: rockwell"> 
+        <li>Code is very <b>difficult</b> to <b>read, understand</b> and <b>modify.</b></li>
+      </ul>
+
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
