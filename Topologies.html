@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Topologies</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: rockwell;
+  background-color:  #f1f1f1;
+}
+
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 50%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color:white ;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1><span style="font-family: Rockwell">Network Topology</span></h1>
+</div>
+
+<div class="topnav">
+  <a href="index.html"><span style= "font-family: rockwell">Homepage</span></a>
+  <a href="https://www.youtube.com/playlist?list=PLysiHWJ-gmZdNH7Bau4QyYT4qncCilCwJ"><span style= "font-family: rockwell">Helpful Video</span></a>
+</div>
+
+<div class="header">
+  <h1><span style="font-family: Rockwell; background-color: white"></span></h1>
+  <img src="TOPOLOGIES.PNG" alt="Topologies Information" width="700" height="200">
+</div>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <h3><span style= "font-family: rockwell; color:lightslategray">Bus Topology</span></h3>
+      <img src="BUSTOPOLOGY.PNG" alt="High Level Language" width="300" height="200">
+      <p style="text-align: left; font-family: rockwell; color: black"><b>Description:</b></p>
+      <ul style="color: black; text-align:left; font-family: Rockwell">
+        <li><b|>Main wire</b> with many <b>connecting wires.</b></li>
+        <li>Each connecting wire has a <b>terminator</b> at the end.</li>
+        <li>The terminator then connects to the <b>device.</b></li>
+      </ul>
+      <p style="text-align: left; font-family: rockwell; color: black"><b>Advantages:</b></p>
+      <ul style="color: black; text-align:left; font-family: Rockwell">
+        <li><b>Inexpensive</b> to set up.</li>
+        <li>If one device <b>fails</b>, the <b>rest will not.</b></li>
+      </ul>
+      <p style="text-align: left; font-family: rockwell; color: black"><b>Disdvantages:</b></p>
+      <ul style="color: black; text-align:left; font-family: Rockwell">
+        <li><b>Signal collisions</b> can occur if too many devices are connected.</li>
+        <li>If the <b>main bus cable fails</b>, the <b>whole network fails.</b></li>
+        <li><b>Security concerns.</b></li>
+      </ul>
+    </div> 
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h3><span style= "font-family: rockwell; color:lightslategray">Star Topology</span></h3>
+      <img src="STARTOPOLOGY.PNG" alt="Assembly Landguage" width="300" height="200">
+      <p style="text-align: left; font-family: rockwell; color: black"><b>Description:</b></p>
+      <ul style="color: black; text-align:left; font-family: Rockwell">
+        <li>All devices are connected to a <b>single switch</b> to create one network.</li>
+      </ul>
+      <p style="text-align: left; font-family: rockwell; color: black"><b>Advantages:</b></p>
+      <ul style="color: black; text-align:left; font-family: Rockwell">
+        <li><b>Hard to overload.</b></li>
+        <li>If there is a <b>fault</b> in one of the devices, it is <b>easy to identify.</b></li>
+        <li>Devices are <b>secure</b> because there is no transmission mediums shared between all the devices.</li>
+      </ul>
+      <p style="text-align: left; font-family: rockwell; color: black"><b>Disdvantages:</b></p>
+      <ul style="color: black; text-align:left; font-family: Rockwell">
+        <li>Additional <b>hardware required</b> - the hardware that is capable of <b>marshalling</b> the signals around the network.</li>
+        <li>If the <b>switch fails</b> the <b>whole network fails.</b></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
